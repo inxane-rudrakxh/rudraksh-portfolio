@@ -1,0 +1,11 @@
+# _redirects – Netlify redirect rules
+#
+# Rewrites bare "directory" requests to the extensionless HTML files that
+# Framer exported.  All other paths (blog/article-slug, work/case-slug, /js/*,
+# /images/*) are served directly from disk with no rewrite needed.
+
+/       /index        200
+/blog   /blog/index   200
+/blog/  /blog/index   200
+/work   /work/index   200
+/work/  /work/index   200
